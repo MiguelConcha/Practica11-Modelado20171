@@ -10,5 +10,5 @@ Entre otras cosas, permite:
 * Modificar la velocidad a la que se mueven la serpiente.
 * Notificar al jugador cuando comió o cuando la serpiente murió.
 * Pausar, reanudar y terminar el juego cuando se desee.
-* LLevar un contador del Highscore del juego, mientras la sesión no haya sido terminada por el usuario.
+* Llevar un contador del Highscore del juego, mientras la sesión no haya sido terminada por el usuario.
 
