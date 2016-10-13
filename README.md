@@ -1,6 +1,8 @@
 # Practica09-Modelado20171
 
-Clásico juego de Snake implementado con Pyqt4. 
+__Clásico juego de Snake implementado con Pyqt4.__ 
+
+![captura de pantalla de 2016-10-12 19-56-33](https://cloud.githubusercontent.com/assets/13952922/19332975/df3120cc-90b6-11e6-8da8-8776c1ebe9e6.png)
 
 Entre otras cosas, permite: 
 
