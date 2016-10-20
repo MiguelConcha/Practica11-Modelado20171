@@ -1,6 +1,7 @@
 # Practica10-Modelado20171
 
 __Clásico juego de Snake implementado con Pyqt4.__ 
+![xml_rpc](https://cloud.githubusercontent.com/assets/13952922/19546719/a353a5ba-9657-11e6-84d2-dbe9bbf0a9e8.png)
 
 
 El juego ahora permite comunicarse con con XMLRPCServer y hacer ciertas peticiones a funciones que fueron registradas en el servidor, a saber: 
