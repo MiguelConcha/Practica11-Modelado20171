@@ -113,6 +113,8 @@ class VentanaServidor(QtGui.QMainWindow):
         self.servidor.register_function(self.yo_juego)
         self.servidor.register_function(self.cambia_direccion)
         self.servidor.register_function(self.estado_del_juego)
+        self.servidor.register_function(self.posiciones_de_guisantes)
+        self.servidor.register_function(self.highscore_game)
         self.servidor.timeout = 0 #Inicialmente, esta es la espera del servidor (tiempo para ejecutar las peticiones antes de volver al loop del juego).
         self.timer_s = QtCore.QTimer(self)
         self.timer_s.timeout.connect(self.hacer) #Para cada contador se le asocia la función correspondiente.
@@ -137,6 +139,9 @@ class VentanaServidor(QtGui.QMainWindow):
 
     def ping(self):
         return "¡Pong!"
+
+    def highscore_game(self):
+    	return self.highscore
 
     def yo_juego(self):
         '''
@@ -181,14 +186,15 @@ class VentanaServidor(QtGui.QMainWindow):
         '''
         diccionario = dict()
         diccionario = {
-            'espera': self.servidor.timeout, 
+            'espera': self.spinBox.value(), 
             'tamX': self.tableWidget.columnCount(),
             'tamY': self.tableWidget.rowCount(),
             'viboras': self.lista_viboras() #Esta lista ya fue construída con otra función.
         }
         return diccionario
 
-
+    def posiciones_de_guisantes(self):
+    	return self.guisantes
 
     def crear_serpiente(self):
         '''
